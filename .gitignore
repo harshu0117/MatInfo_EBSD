@@ -1,0 +1,88 @@
+# ==============================================================================
+# Data Sources & Large Raw Datasets (Strictly Blocked)
+# ==============================================================================
+
+# Raw text data dumps (e.g., nano.txt ~347MB, ebsd.txt ~10MB)
+dataset/*.txt
+*.txt
+!requirements.txt
+
+# JSON datasets (e.g., final_indentation_dataset.json ~182MB)
+*.json
+
+# CSV & Tabular datasets (e.g., merged CSVs, xcels/ folder ~177MB total)
+*.csv
+*.tsv
+xcels/
+
+# Excel spreadsheets
+*.xlsx
+*.xls
+*.xlsm
+
+# Binary numerical & scientific data formats
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.dat
+*.mat
+
+# Batch-generated plot outputs (999 individual curve PNGs ~37MB)
+indentation_plots/
+
+# Research literature & PDF papers (~20MB)
+papers/
+*.pdf
+
+# ==============================================================================
+# Python & Environment Artifacts
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# ==============================================================================
+# Operating System & IDE Artifacts
+# ==============================================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
